@@ -1,16 +1,6 @@
 return {
   "goolord/alpha-nvim",
-  opts = function(_, opts)
-    local logo = [[
-	  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
-	  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
-	  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
-	  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
-	  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
-	  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
-
-	                   [ @Ajustor ]
-    ]]
-    opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
+  config = function()
+    require("alpha").setup(require("alpha.themes.dashboard").config)
   end,
 }
