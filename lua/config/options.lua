@@ -31,5 +31,7 @@ vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 -- vim.opt.mouse = ""
 
+vim.o.relativenumber = true
+
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
