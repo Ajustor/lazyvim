@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -10,12 +10,10 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
-      return {
-        inlay_hint = {
-          enabled = true
-        }
-      }
     end,
+    opts = {
+      inlay_hints = { enabled = true },
+    },
   },
 
   -- {
