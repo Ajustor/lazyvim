@@ -31,13 +31,13 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
+require "autocmds"
 
 vim.schedule(function()
   require "mappings"
 end)
 
 local function open_nvim_tree()
-
   -- open the tree
   require("nvim-tree.api").tree.open()
 end
