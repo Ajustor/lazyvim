@@ -8,7 +8,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<leader>qq", "<cmd>:quitall<CR>", { desc = "Quit all neovim instance" })
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
-map({ "n" }, "<leader>ll", "<cmd>:Lazy<CR", { desc = "Open lazyvim interface" })
+map({ "n" }, "<leader>ll", "<cmd>Lazy<CR>", { desc = "Open lazyvim interface" })
 -- Move lines
 map({ "x", "n" }, "<A-j>", ":move +1<CR>")
 map({ "x", "n" }, "<A-k>", ":move -2<CR>")
