@@ -9,16 +9,21 @@ return {
       loaded = "",
       not_loaded = "",
     },
+    statusline = {
+      enabled = true,
+      theme = "default",
+      separator_style = "default",
+    },
   },
 
   spec = {
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-		{ import = "lazyvim.plugins.extras.lang.typescript" },
-		{ import = "lazyvim.plugins.extras.lang.json" },
-		{ import = "lazyvim.plugins.extras.lang.tailwind" },
-		{ import = "lazyvim.plugins.extras.coding.copilot" },
-		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-		{ import = "plugins" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "plugins" },
   },
 
   performance = {
