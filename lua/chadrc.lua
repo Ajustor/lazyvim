@@ -7,6 +7,7 @@ local M = {}
 
 M.base46 = {
   theme = "onedark",
+  transparency = false,
   -- hl_override = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
@@ -14,7 +15,21 @@ M.base46 = {
 }
 
 M.nvdash = {
-  load_on_startup = true,
+  load_on_startup = false,
+  header = {
+    "                            ",
+    "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
+    "   ▄▀███▄     ▄██ █████▀    ",
+    "   ██▄▀███▄   ███           ",
+    "   ███  ▀███▄ ███           ",
+    "   ███    ▀██ ███           ",
+    "   ███      ▀ ███           ",
+    "   ▀██ █████▄▀█▀▄██████▄    ",
+    "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
+    "                            ",
+    "     Powered By  eovim    ",
+    "                            ",
+  },
 }
 
 M.ui = {
@@ -22,6 +37,17 @@ M.ui = {
     enabled = true,
     theme = "default",
     separator_style = "default",
+    -- order = { "mode", "f", "git", "%=", "lsp_msg", "%=", "lsp", "cwd" },
+    modules = nil,
+  },
+  tabufline = {
+    enabled = true,
+    lazyload = true,
+    order = { "treeOffset", "buffers", "tabs", "btns" },
+    modules = nil,
+  },
+  telescope = {
+    style = "bordered",
   },
 }
 
