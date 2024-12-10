@@ -9,11 +9,11 @@ return {
   { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.git" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.terraform" },
   -- import/override with your plugins folder
 }
